@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA=Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='custom.css')}}">       
+        <title>enterOTP</title>
+       
+    </head>
+    <body>
+        <form action="/verifyOTP" method='post'>
+        <div class="OTP-form">
+        <h1>OTP verification</h1>
+        <p>
+            An OTP has been sent to your mobilenumber{{name}}
+        </p>
+        <input type="text" name="enterOTP" placeholder="enter OTP">
+        <button class="anchor-button" type="submit"></button>
+         </div>   
+        </form>    
+    </body>
+</html>
